@@ -7,7 +7,7 @@ from typing import List
 
 task_wait_random = __import__('3-tasks').task_wait_random
 
-async def task_wait_n(n: int, max_delays: int) -> List[asyncio.Task]:
+async def task_wait_n(n: int, max_delays: int) -> List[float]:
     '''
     The task_wait_n function takes two integers, n and max_delay, and
     returns a list of asyncio.Task objects that wait for random delays
