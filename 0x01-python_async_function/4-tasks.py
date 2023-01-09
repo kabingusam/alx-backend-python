@@ -13,6 +13,7 @@ async def task_wait_n(n: int, max_delays: int) -> List[float]:
     returns a list of asyncio.Task objects that wait for random delays
     between 0 and max_delay seconds.
     '''
-    delays = await asyncio.gather(*(task_wait_random(max_delays) for _ in range (n)))
-
-    return (delays)
+    wait_times = await asyncio.gather(
+        *tuple(map(lambda _: task_wait_random(max_delay), range(n)))
+    )
+    return sorted(wait_times)
