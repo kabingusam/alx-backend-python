@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# 0-basic_async_syntax.py
+'''0-basic_async_syntax.py
+'''
 
 import asyncio
 import random
