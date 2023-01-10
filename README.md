@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains exercises and examples related to Python async functions and variable annotations. The content is intended for students of the Alx SE Program.
+This repository contains exercises and examples related to Python. The content is intended for students of the Alx SE Program.
 
 ## Table of Contents
 
